@@ -1,0 +1,98 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #ffff00;
+  padding: 10px;
+}
+#wheel {
+  display: flex;
+}
+.box {
+  position: fixed;
+  padding: 30px 40px;
+  background: url('./assets/bingo.jpg') ;
+  background-position-y: 100px;
+  background-position-X: -150px;
+  filter: grayscale(0.4);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 950px;
+  height: 650px;
+  z-index: 2;
+  position: absolute;
+}
+.box .imageBox {
+  text-align: center;
+}
+.box img {
+  width: 550px;
+}
+.title {
+  text-align: center;
+  font-size: 32px;
+}
+.closeContainer {
+  display: flex;
+  justify-content: center;
+}
+.closepankaj {
+  margin-top: 30px;
+  width: 240px;
+  height: 54px;
+  cursor: pointer;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: #2466ff;
+  border-radius: 5px;
+}
+.inputContainer {
+  display: flex;
+}
+
+
+button.addName{
+
+	padding: 11px 15px !important;
+    border: unset;
+    outline: unset;
+    background: #2185d0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #fff;
+}
+
+.listName{
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 25px;
+  height: 550px;
+  overflow-y: auto;
+  
+}
+.listName h5{
+  margin: 10px 0;
+}
+.rowName{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteName:hover{
+  cursor: pointer;
+}
+.deleteName{
+	  padding: 11px 15px !important;
+    border: unset;
+    outline: unset;
+    background: transparent;
+    color: #f72e2e;
+}
